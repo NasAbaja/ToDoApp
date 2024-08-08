@@ -1,4 +1,5 @@
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Todo from './components/Todo';
 import Navbar from './components/Navbar';
 import lexmeet_bg from './assets/lexmeet_bg.png'; // Adjust the path according to your file structure

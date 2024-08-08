@@ -149,3 +149,18 @@
 .todo-action-button:hover {
   background-color: rgba(255, 127, 77, 0.7);
 }
+
+.todo-cancel-edit-button {
+  padding: 10px 20px;
+  background-color: rgb(108, 117, 125); /* Gray color for cancel button */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 15px;
+  margin-left: 10px;
+}
+
+.todo-cancel-edit-button:hover {
+  background-color: rgb(108, 117, 125, 0.7);
+}
