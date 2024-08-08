@@ -60,6 +60,7 @@ const Todo = () => {
   };
 
   const saveEdit = () => {
+    if (editText.trim() === "") return; // Prevent saving if editText is empty
     setTodoList((prevTodos) => {
       return prevTodos.map((todo) => {
         if (todo.id === editingId) {
@@ -68,6 +69,11 @@ const Todo = () => {
         return todo;
       });
     });
+    setEditingId(null);
+    setEditText("");
+  };
+
+  const cancelEdit = () => {
     setEditingId(null);
     setEditText("");
   };
@@ -146,6 +152,12 @@ const Todo = () => {
             className="todo-save-edit-button"
           >
             SAVE
+          </button>
+          <button
+            onClick={cancelEdit}
+            className="todo-cancel-edit-button"
+          >
+            CANCEL
           </button>
         </div>
       )}
